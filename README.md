@@ -16,8 +16,21 @@ This project utilizes the Ktor library for networking and Jetpack Compose Horizo
 Briefly introduce your project here, including its purpose and key features.
 
 ## Clean Architecture
+-**Separation of Concerns (SoC)**:
+  - The project divides functionality into separate layers: presentation, domain, and data.
+  - Each layer has distinct responsibilities: UI rendering, business logic, and data access, respectively.
+  - This separation enhances code organization and readability.
 
-Explain the clean architecture principles followed in your project, such as separation of concerns, dependency inversion, and testability.
+- **Dependency Inversion Principle (DIP)**:
+  - The project relies on abstractions rather than concrete implementations.
+  - Components depend on interfaces (e.g., `Repository`) rather than specific implementations.
+  - This promotes loose coupling and facilitates easier swapping of implementations.
+
+- **Testability**:
+  - The project's architecture supports testability at various levels.
+  - Components can be easily isolated for unit testing due to their modular design.
+  - Mocking and stubbing of dependencies is straightforward, enhancing testability.
+
 
 ## Ktor
 
