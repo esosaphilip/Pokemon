@@ -1,6 +1,6 @@
 # Pokemon Project
 
-![Pokemon Logo](/path/to/logo.png)
+![Pokemon Logo](app/src/main/res/drawable/somethingnew.png)
 
 This project utilizes the Ktor library for networking and Jetpack Compose HorizontalPager to display images in a carousel format.
 
