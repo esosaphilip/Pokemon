@@ -11,7 +11,6 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import coil.size.Scale
 import com.esosaphilip.pokemon.R
-import com.esosaphilip.pokemon.data.Pokemon
 
 @Composable
 fun HeadImage(painter: Painter) {
@@ -20,18 +19,17 @@ fun HeadImage(painter: Painter) {
 
 @Composable
 fun ImagePokemon(
-   pokemon: List<Pokemon>,
+   pokemonImageUrl: String,
    modifier: Modifier
 ) {
  AsyncImage(
      model =  ImageRequest.Builder(LocalContext.current)
          .scale(Scale.FILL).crossfade(true)
-         .data(pokemon)
+         .data(pokemonImageUrl)
          .build(),
      contentDescription = "Image",
      contentScale = ContentScale.Crop,
      placeholder = painterResource(id = R.drawable.placeholderimage),
      error = painterResource(id = R.drawable.errorimage),
-     modifier = modifier
  )
 }
