@@ -2,7 +2,6 @@ package com.esosaphilip.pokemon.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
@@ -14,13 +13,12 @@ import com.esosaphilip.pokemon.R
 
 @Composable
 fun HeadImage(painter: Painter) {
-    Image(painter = painterResource(R.drawable.mycropped), contentDescription = null)
+    Image(painter = painter, contentDescription = null)
 }
 
 @Composable
 fun ImagePokemon(
    pokemonImageUrl: String,
-   modifier: Modifier
 ) {
  AsyncImage(
      model =  ImageRequest.Builder(LocalContext.current)

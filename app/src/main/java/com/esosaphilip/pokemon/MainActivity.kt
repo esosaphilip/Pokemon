@@ -13,7 +13,6 @@ import com.esosaphilip.pokemon.ui.presentation.PokemonViewModel
 import com.esosaphilip.pokemon.ui.theme.PokemonTheme
 
 class MainActivity : ComponentActivity() {
-
     private val viewModel: PokemonViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    CarouselScreen(pokemonViewModel = viewModel )
+                    CarouselScreen(pokemonViewModel = viewModel)
                 }
             }
         }
